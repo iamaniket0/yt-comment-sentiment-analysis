@@ -1,110 +1,47 @@
 yt-comment-sentiment-analysis
 ==============================
-Project Overview
+# YouTube Comment Sentiment Analysis Chrome Extension
 
-This project is a Chrome Extension that performs sentiment analysis on YouTube comments in real-time. It uses machine learning to classify comments as positive, neutral, or negative, helping users quickly understand audience sentiment.
+## Project Overview
+This project is a **Chrome Extension** that performs **sentiment analysis** on YouTube comments in real-time. It uses machine learning to classify comments as **positive, neutral, or negative**, helping users quickly understand audience sentiment.
 
-Key Features:
+### Key Features
+- Real-time sentiment classification of YouTube comments  
+- Lightweight Chrome Extension UI for easy integration  
+- Backend deployed with **Flask, Docker, and MLflow** for model tracking  
+- Data versioning and experiment tracking using **DVC**  
 
-Real-time sentiment classification of YouTube comments.
+---
 
-Lightweight Chrome Extension UI for easy integration.
+## Tech Stack
+- **Programming & ML:** Python, LightGBM, TensorFlow, Keras  
+- **Data Processing:** Pandas, NumPy, Scikit-learn  
+- **Visualization:** Matplotlib, Seaborn  
+- **Deployment & Cloud:** Flask, Docker, AWS EC2, S3, MLflow, DVC  
+- **Other Tools:** Git, GitHub, Chrome Extensions API  
 
-Backend deployed with Flask, Docker, and MLflow for model tracking.
+---
 
-Data versioning and experiment tracking using DVC.
+## Dataset
+- Collected and preprocessed **10,000+ YouTube comments** from multiple channels  
+- Performed **text cleaning, tokenization, and feature engineering** for model training  
 
-Tech Stack
+---
 
-Programming & ML: Python, LightGBM, TensorFlow, Keras
+## Model
+- **Algorithm:** LightGBM (Gradient Boosting)  
+- **Accuracy:** 87% on test set  
+- **Evaluation Metrics:** Accuracy, F1-Score, Confusion Matrix  
 
-Data Processing: Pandas, NumPy, Scikit-learn
+---
 
-Visualization: Matplotlib, Seaborn
+## Installation
 
-Deployment & Cloud: Flask, Docker, AWS EC2, S3, MLflow, DVC
-
-Other Tools: Git, GitHub, Chrome Extensions API
-
-Dataset
-
-Collected and preprocessed 10,000+ YouTube comments from multiple channels.
-
-Performed text cleaning, tokenization, and feature engineering for model training.
-
-Model
-
-Algorithm: LightGBM (Gradient Boosting)
-
-Accuracy: 87% on test set
-
-Evaluation Metrics: Accuracy, F1-Score, Confusion Matrix
-
-Installation
-Clone the Repository
+### Clone the Repository
+```bash
 git clone https://github.com/<your-username>/yt-comment-sentiment-analysis.git
 cd yt-comment-sentiment-analysis
 
-Backend Setup
-
-Create and activate virtual environment:
-
-python -m venv env
-source env/bin/activate   # Linux/Mac
-env\Scripts\activate      # Windows
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Run Flask server:
-
-python app.py
-
-Chrome Extension Setup
-
-Open Chrome → Extensions → Developer mode → Load unpacked
-
-Select the chrome_extension folder from the repo
-
-Visit any YouTube video and see sentiment analysis in action
-
-Usage
-
-Input: YouTube video URL
-
-Output: Sentiment label (Positive / Neutral / Negative) for each comment
-
-Sentiment results displayed directly in the extension UI
-
-Project Highlights
-
-Deployment: Full end-to-end deployment on AWS EC2
-
-CI/CD: Automated deployment using GitHub Actions
-
-Experiment Tracking: MLflow & DVC for version control of data and models
-
-Impact: Enabled automated sentiment analysis for content creators, improving engagement insights
-
-Screenshots
-
-
-
-
-Future Work
-
-Extend support to multi-language sentiment analysis
-
-Integrate GPT-based sentiment explanations for nuanced feedback
-
-Improve model accuracy using ensemble approaches
-
-Author
-
-Aniket Yadish – MSc in Managing with Data & AI | Machine Learning Researcher
 
 
 Project Organization
