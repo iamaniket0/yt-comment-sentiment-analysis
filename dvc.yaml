@@ -7,6 +7,7 @@ stages:
     - data_ingestion.test_size
     outs:
     - data/raw
+
   data_preprocessing:
     cmd: python src/data/data_preprocessing.py
     deps:
@@ -15,6 +16,7 @@ stages:
     - src/data/data_preprocessing.py
     outs:
     - data/interim
+
   model_building:
     cmd: python src/model/model_building.py
     deps:
@@ -29,6 +31,7 @@ stages:
     outs:
     - lgbm_model.pkl
     - tfidf_vectorizer.pkl
+
   model_evaluation:
     cmd: python src/model/model_evaluation.py
     deps:
@@ -39,3 +42,9 @@ stages:
     - src/model/model_evaluation.py
     outs:
     - experiment_info.json
+
+  model_registration:
+    cmd: python src/model/register_model.py
+    deps:
+    - experiment_info.json
+    - src/model/register_model.py

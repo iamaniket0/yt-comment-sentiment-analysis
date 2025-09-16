@@ -1,7 +1,7 @@
 #!/Users/aniket_ml/yt-comment-sentiment-analysis/myenv/bin/python
 import sys
-from tabulate import _main
+from databricks_cli.dbfs.cli import dbfs_group
 if __name__ == '__main__':
     if sys.argv[0].endswith('.exe'):
         sys.argv[0] = sys.argv[0][:-4]
-    sys.exit(_main())
+    sys.exit(dbfs_group())
