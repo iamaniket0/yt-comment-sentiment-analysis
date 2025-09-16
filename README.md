@@ -34,12 +34,9 @@ This project is a **Chrome Extension** that performs **sentiment analysis** on Y
 
 ---
 
-## Installation
 
-### Clone the Repository
-```bash
-git clone https://github.com/<your-username>/yt-comment-sentiment-analysis.git
-cd yt-comment-sentiment-analysis
+
+
 
 
 
