@@ -1,5 +1,4 @@
-yt-comment-sentiment-analysis
-==============================
+
 # YouTube Comment Sentiment Analysis Chrome Extension
 
 ## Project Overview
