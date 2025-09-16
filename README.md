@@ -31,6 +31,7 @@ This project is a **Chrome Extension** that performs **sentiment analysis** on Y
 - **Algorithm:** LightGBM (Gradient Boosting)  
 - **Accuracy:** 87% on test set  
 - **Evaluation Metrics:** Accuracy, F1-Score, Confusion Matrix  
+![Chrome Plugin UI](screenshots/chrome-plugin-yt.png)
 
 ---
 
